@@ -1,0 +1,45 @@
+# トドロミグラウンド 設定ファイル
+
+ground:
+  name: "トドロミグラウンド"
+  location: "大阪"
+  courts:
+    - id: "人工芝"
+      name: "人工芝グラウンド"
+      description: "人工芝フルピッチ 大人:105x68m / 少年:68x50m（2面）"
+    - id: "天然芝"
+      name: "天然芝グラウンド"
+      description: "天然芝フルピッチ 大人:96x68m / 少年:68x48m（2面）"
+
+pricing:
+  min_booking_hours: 2
+  unit_hours: 2
+
+  categories:
+    elementary:
+      label: "小学生"
+      weekday: 6000
+      weekend: 7000
+    middle_high:
+      label: "中・高校生"
+      weekday: 7000
+      weekend: 8000
+    general:
+      label: "一般"
+      weekday: 12000
+      weekend: 13000
+
+  long_vacation_as_weekend: true
+
+  payment:
+    method: "前払い（請求書）"
+    note: "ご予約確定後、請求書を発行いたします"
+
+business_hours:
+  open: "07:00"
+  close: "21:00"
+
+notifications:
+  discord_enabled: true
+  discord_only: true
+  daily_summary_time: "20:00"
